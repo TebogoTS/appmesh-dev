@@ -12,7 +12,7 @@ spec:
         port: 80
         protocol: http
       tls:
-        mode: STRICT
+        mode: PERMISSIVE
         certificate:
           acm:
             certificateARN: arn:aws:acm:us-east-1:413271701111:certificate/4e65d8c6-b483-4f2c-9984-2b69716c70af
