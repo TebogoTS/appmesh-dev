@@ -11,11 +11,11 @@ spec:
     - portMapping:
         port: 80
         protocol: http
-      # tls:
-      #   mode: STRICT
-      #   certificate:
-      #     acm:
-      #       certificateARN: arn:aws:acm:us-east-1:413271701111:certificate/4e65d8c6-b483-4f2c-9984-2b69716c70af
+      tls:
+        mode: STRICT
+        certificate:
+          acm:
+            certificateARN: arn:aws:acm:us-east-1:413271701111:certificate/4e65d8c6-b483-4f2c-9984-2b69716c70af
   serviceDiscovery:
     dns:
       hostname: my-service-a.my-apps.svc.cluster.local
